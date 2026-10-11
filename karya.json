@@ -1,0 +1,50 @@
+{
+  "profil": {
+    "nama": "Mohamad Thoif, S.Si",
+    "tagline": "Laboran dan pengembang aplikasi web untuk pendidikan dan laboratorium",
+    "tentang": "Lulusan S1 Kimia Universitas Islam Malang. Bertugas sebagai laboran Prodi Farmasi FK Unisma dan mengelola kesekretariatan laboratorium. Di luar tugas rutin, saya membangun website dan aplikasi web untuk mempermudah pekerjaan di lingkungan laboratorium dan pendidikan.",
+    "peran": "Laboran Prodi Farmasi, FK Unisma (2023-sekarang)",
+    "pendidikan": "S1 Kimia, Universitas Islam Malang (2013-2019)",
+    "email": "",
+    "linkedin": "",
+    "github": "https://github.com/fiohtdamahom-id"
+  },
+  "karya": [
+    {
+      "id": "portal-lab-farmasi",
+      "judul": "Portal Laboratorium Farmasi",
+      "platform": "Google Sites",
+      "ringkasan": "Pusat dokumen, informasi K3, kuis, e-library, dan direktori laboratorium dalam satu situs.",
+      "tautan": "https://sites.google.com/unisma.ac.id/labfarmasi-fkunisma/beranda",
+      "gambar": "",
+      "status": "",
+      "peran": "",
+      "dampak": "",
+      "tahun": ""
+    },
+    {
+      "id": "ujian-online",
+      "judul": "AppWeb Ujian Online",
+      "platform": "Google Apps Script",
+      "ringkasan": "Aplikasi web untuk pelaksanaan ujian secara daring.",
+      "tautan": "https://script.google.com/a/unisma.ac.id/macros/s/AKfycbw7e7lnvmNtF0Tq0kpCf-Ah6zViwOsTC7A_Qw5_dZxDETrGXmCEFtLdTYihvfZ6EtrN/exec?page=login",
+      "gambar": "",
+      "status": "",
+      "peran": "",
+      "dampak": "",
+      "tahun": ""
+    },
+    {
+      "id": "stok-opname-bahan-kimia",
+      "judul": "AppWeb Stok Opname Bahan Kimia Lab",
+      "platform": "Google Apps Script",
+      "ringkasan": "Aplikasi web untuk pencatatan dan pengecekan stok bahan kimia laboratorium.",
+      "tautan": "https://script.google.com/a/unisma.ac.id/macros/s/AKfycbyQXfbLWOBxOqiWMGxBg_DnqwUURvc5DuZ20oQGGaXwo1yuorYMeLpjroO-wwa4U57N/exec?page=daftar-bahan",
+      "gambar": "",
+      "status": "",
+      "peran": "",
+      "dampak": "",
+      "tahun": ""
+    }
+  ]
+}

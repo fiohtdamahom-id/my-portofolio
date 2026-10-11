@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mohamad Thoif, S.Si | Portofolio</title>
+<meta name="description" content="Portofolio Mohamad Thoif, S.Si: laboran dan pengembang website serta aplikasi web untuk pendidikan dan laboratorium.">
+<meta name="author" content="Mohamad Thoif">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mohamad Thoif, S.Si | Portofolio">
+<meta property="og:description" content="Website dan aplikasi web untuk pendidikan dan laboratorium, dibuat oleh Mohamad Thoif.">
+<meta name="theme-color" content="#0f3b3a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f3b3a'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' font-weight='700' text-anchor='middle' fill='%23f2b544'%3ETh%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f6f2e9; --paper-2:#ede7d8; --ink:#14201f; --muted:#4f5f5d;
+  --teal:#0f3b3a; --teal-2:#176261; --amber:#f2b544; --line:#d6cfbc; --card:#fffdf8;
+  --serif:'Fraunces',Georgia,'Times New Roman',serif;
+  --sans:'IBM Plex Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root{--paper:#0d1716;--paper-2:#132221;--ink:#ece8dc;--muted:#a3b2af;--teal:#0a2927;--teal-2:#7fd0c8;--amber:#f2b544;--line:#243836;--card:#12201f}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1rem/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{width:min(1080px,100% - 32px);margin-inline:auto}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--amber);color:#14201f;padding:8px 14px;border-radius:6px;z-index:10}
+.skip:focus{left:8px}
+
+/* Header */
+header.top{border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;justify-content:space-between;align-items:center;padding:14px 0;gap:16px}
+.brand{font-family:var(--serif);font-weight:700;text-decoration:none;font-size:1.05rem}
+.brand span{color:var(--teal-2)}
+nav a{font:500 .85rem var(--mono);text-decoration:none;margin-left:18px;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+
+/* Hero */
+.hero{padding:clamp(48px,9vw,104px) 0 clamp(40px,7vw,72px);position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-120px;top:-60px;width:380px;height:380px;border-radius:50%;
+  background:radial-gradient(circle at 30% 30%,rgba(242,181,68,.35),rgba(242,181,68,0) 65%);pointer-events:none}
+.eyebrow{font:500 .8rem var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--teal-2);margin:0 0 16px}
+h1{font-family:var(--serif);font-weight:700;font-size:clamp(2.2rem,6.5vw,4.2rem);line-height:1.05;margin:0 0 20px;letter-spacing:-.02em;max-width:20ch}
+.tagline{font-size:clamp(1.05rem,2.4vw,1.3rem);color:var(--muted);max-width:44ch;margin:0 0 28px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:12px 20px;border-radius:10px;font-weight:600;text-decoration:none;border:2px solid var(--teal);transition:transform .15s,background .15s}
+.btn.primary{background:var(--teal);color:#f6f2e9}
+.btn.primary:hover{transform:translateY(-2px)}
+.btn.ghost{color:var(--ink);border-color:var(--line)}
+.btn.ghost:hover{border-color:var(--teal-2)}
+@media (prefers-color-scheme:dark){.btn.primary{background:var(--amber);border-color:var(--amber);color:#14201f}}
+
+/* Sections */
+section{padding:clamp(40px,7vw,72px) 0;border-top:1px solid var(--line)}
+h2{font-family:var(--serif);font-size:clamp(1.5rem,3.4vw,2.1rem);margin:0 0 8px;letter-spacing:-.01em}
+.lead{color:var(--muted);margin:0 0 32px;max-width:60ch}
+.about{display:grid;gap:32px;grid-template-columns:1fr}
+@media(min-width:800px){.about{grid-template-columns:1.4fr 1fr}}
+.about p{margin:0 0 14px;max-width:62ch}
+dl.facts{margin:0;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+dl.facts dt{font:500 .72rem var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--teal-2)}
+dl.facts dd{margin:2px 0 14px}
+dl.facts dd:last-child{margin-bottom:0}
+
+/* Cards */
+.grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px -18px rgba(15,59,58,.45)}
+.thumb{aspect-ratio:16/9;background:var(--teal);display:grid;place-items:center;position:relative;overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.thumb .ph{font-family:var(--serif);font-size:3rem;font-weight:700;color:var(--amber)}
+.thumb .no{position:absolute;left:12px;top:10px;font:500 .72rem var(--mono);color:rgba(246,242,233,.75)}
+.body{padding:20px;display:flex;flex-direction:column;gap:12px;flex:1}
+.body h3{font-family:var(--serif);font-size:1.25rem;margin:0;line-height:1.25}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:500 .72rem var(--mono);padding:3px 10px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.chip.status{border-color:var(--teal-2);color:var(--teal-2)}
+.body p{margin:0;color:var(--muted)}
+.meta{margin:0;font-size:.92rem}
+.meta b{font-weight:600}
+.body .btn{margin-top:auto;text-align:center;padding:10px 16px;border-width:1.5px}
+.note{margin-top:28px;padding:16px 18px;border-left:4px solid var(--amber);background:var(--paper-2);border-radius:0 10px 10px 0;font-size:.92rem;color:var(--muted)}
+
+/* States */
+.state{padding:28px;border:1px dashed var(--line);border-radius:14px;color:var(--muted);text-align:center}
+.skeleton{height:280px;border-radius:16px;background:linear-gradient(90deg,var(--paper-2),var(--card),var(--paper-2));background-size:200% 100%;animation:sh 1.4s infinite}
+@keyframes sh{to{background-position:-200% 0}}
+
+/* Contact + footer */
+.links{display:flex;flex-wrap:wrap;gap:12px}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.9rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#karya">Lewati ke daftar karya</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#" id="brandName">Thoif<span>.</span></a>
+    <nav aria-label="Navigasi utama">
+      <a href="#tentang">Tentang</a>
+      <a href="#karya">Karya</a>
+      <a href="#kontak" id="navKontak" hidden>Kontak</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Portofolio</p>
+      <h1 id="heroName">Mohamad Thoif, S.Si</h1>
+      <p class="tagline" id="heroTagline">Laboran dan pengembang aplikasi web untuk pendidikan dan laboratorium</p>
+      <div class="cta">
+        <a class="btn primary" href="#karya">Lihat karya</a>
+        <a class="btn ghost" href="#tentang">Tentang saya</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="tentang" aria-labelledby="h-tentang">
+    <div class="wrap about">
+      <div>
+        <h2 id="h-tentang">Tentang saya</h2>
+        <p id="aboutText"></p>
+      </div>
+      <dl class="facts" id="facts"></dl>
+    </div>
+  </section>
+
+  <section id="karya" aria-labelledby="h-karya">
+    <div class="wrap">
+      <h2 id="h-karya">Karya</h2>
+      <p class="lead">Website dan aplikasi web yang saya bangun untuk kebutuhan nyata di laboratorium dan pendidikan.</p>
+      <div id="grid" class="grid" aria-live="polite" aria-busy="true">
+        <div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div>
+      </div>
+      <p class="note">Sebagian karya berada di domain <b>unisma.ac.id</b> dan dapat meminta login akun Unisma. Pengunjung dari luar mungkin tidak bisa membukanya.</p>
+    </div>
+  </section>
+
+  <section id="kontak" aria-labelledby="h-kontak" hidden>
+    <div class="wrap">
+      <h2 id="h-kontak">Kontak</h2>
+      <p class="lead">Terbuka untuk diskusi, kolaborasi, dan peluang pengembangan produk digital.</p>
+      <div class="links" id="links"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="year">2026</span> <span id="footName">Mohamad Thoif</span></span>
+    <span>Dibangun dengan HTML, CSS, dan JavaScript.</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  var STATUS = {
+    'digunakan-rutin': 'Digunakan rutin',
+    'uji-coba': 'Uji coba',
+    'prototipe': 'Prototipe'
+  };
+
+  function el(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text) n.textContent = text;
+    return n;
+  }
+  function has(v) { return typeof v === 'string' && v.trim() !== ''; }
+  function safeUrl(u) {
+    if (!has(u)) return null;
+    try {
+      var x = new URL(u, location.href);
+      return (x.protocol === 'https:' || x.protocol === 'http:' || x.protocol === 'mailto:') ? x.href : null;
+    } catch (e) { return null; }
+  }
+  function metaLine(label, value) {
+    var p = el('p', 'meta');
+    var b = el('b', null, label + ': ');
+    p.appendChild(b);
+    p.appendChild(document.createTextNode(value));
+    return p;
+  }
+
+  function renderProfile(p) {
+    p = p || {};
+    if (has(p.nama)) {
+      document.getElementById('heroName').textContent = p.nama;
+      document.getElementById('footName').textContent = p.nama.replace(/,.*$/, '');
+      document.title = p.nama + ' | Portofolio';
+      document.getElementById('brandName').firstChild.textContent = p.nama.replace(/,.*$/, '').split(' ').pop();
+    }
+    if (has(p.tagline)) document.getElementById('heroTagline').textContent = p.tagline;
+    document.getElementById('aboutText').textContent = has(p.tentang) ? p.tentang : '';
+
+    var facts = document.getElementById('facts');
+    [['Peran saat ini', p.peran], ['Pendidikan', p.pendidikan]].forEach(function (f) {
+      if (!has(f[1])) return;
+      facts.appendChild(el('dt', null, f[0]));
+      facts.appendChild(el('dd', null, f[1]));
+    });
+    if (!facts.children.length) facts.hidden = true;
+
+    var links = document.getElementById('links');
+    [['Email', p.email && 'mailto:' + p.email], ['LinkedIn', p.linkedin], ['GitHub', p.github]].forEach(function (l) {
+      var href = safeUrl(l[1]);
+      if (!href) return;
+      var a = el('a', 'btn ghost', l[0]);
+      a.href = href;
+      if (href.indexOf('mailto:') !== 0) { a.target = '_blank'; a.rel = 'noopener noreferrer'; }
+      links.appendChild(a);
+    });
+    if (links.children.length) {
+      document.getElementById('kontak').hidden = false;
+      document.getElementById('navKontak').hidden = false;
+    }
+  }
+
+  function renderCard(k, i) {
+    var card = el('article', 'card');
+
+    var thumb = el('div', 'thumb');
+    thumb.appendChild(el('span', 'no', String(i + 1).padStart(2, '0')));
+    var img = safeUrl(k.gambar);
+    if (img) {
+      var im = document.createElement('img');
+      im.src = img;
+      im.alt = 'Tangkapan layar ' + (k.judul || 'karya');
+      im.loading = 'lazy';
+      im.addEventListener('error', function () {
+        im.remove();
+        thumb.appendChild(el('span', 'ph', (k.judul || '?').charAt(0)));
+      });
+      thumb.appendChild(im);
+    } else {
+      thumb.appendChild(el('span', 'ph', (k.judul || '?').charAt(0)));
+    }
+    card.appendChild(thumb);
+
+    var body = el('div', 'body');
+    body.appendChild(el('h3', null, k.judul || 'Tanpa judul'));
+
+    var chips = el('div', 'chips');
+    if (has(k.platform)) chips.appendChild(el('span', 'chip', k.platform));
+    if (has(k.status) && STATUS[k.status]) chips.appendChild(el('span', 'chip status', STATUS[k.status]));
+    if (has(k.tahun)) chips.appendChild(el('span', 'chip', k.tahun));
+    if (chips.children.length) body.appendChild(chips);
+
+    if (has(k.ringkasan)) body.appendChild(el('p', null, k.ringkasan));
+    if (has(k.peran)) body.appendChild(metaLine('Peran saya', k.peran));
+    if (has(k.dampak)) body.appendChild(metaLine('Dampak', k.dampak));
+
+    var href = safeUrl(k.tautan);
+    if (href) {
+      var a = el('a', 'btn primary', 'Buka karya');
+      a.href = href; a.target = '_blank'; a.rel = 'noopener noreferrer';
+      a.setAttribute('aria-label', 'Buka karya ' + (k.judul || ''));
+      body.appendChild(a);
+    }
+    card.appendChild(body);
+    return card;
+  }
+
+  function renderWorks(list) {
+    var grid = document.getElementById('grid');
+    grid.textContent = '';
+    grid.setAttribute('aria-busy', 'false');
+    if (!Array.isArray(list) || !list.length) {
+      grid.appendChild(el('div', 'state', 'Belum ada karya yang ditampilkan.'));
+      return;
+    }
+    list.forEach(function (k, i) { grid.appendChild(renderCard(k, i)); });
+  }
+
+  function showError(msg) {
+    var grid = document.getElementById('grid');
+    grid.textContent = '';
+    grid.setAttribute('aria-busy', 'false');
+    grid.appendChild(el('div', 'state', msg));
+  }
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  fetch('karya.json', { cache: 'no-cache' })
+    .then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    })
+    .then(function (data) {
+      renderProfile(data.profil);
+      renderWorks(data.karya);
+    })
+    .catch(function (e) {
+      console.error('Gagal memuat karya.json:', e);
+      showError('Data karya belum bisa dimuat. Periksa file karya.json (format JSON harus valid) lalu muat ulang halaman.');
+    });
+})();
+</script>
+</body>
+</html>
